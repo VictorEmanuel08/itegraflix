@@ -1,11 +1,13 @@
-# Getting Started with Create React App
+# ITEGRAFLIX
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta é uma aplicação web de catálogo contendo os 10 filmes mais populares da atualidade, através da APi do The Movie Database (TMDB).
 
-## Available Scripts
+## Iniciando o projeto
+Após clonar o projeto e abrí-lo, você pode instalar todas dependências com um:
 
-In the project directory, you can run:
+### `npm install`
 
+Depois disso, é só iniciar com
 ### `npm start`
 
 Runs the app in the development mode.\
