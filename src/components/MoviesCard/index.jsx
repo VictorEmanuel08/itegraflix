@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import StarIcon from "@mui/icons-material/Star";
@@ -8,10 +7,9 @@ export function MoviesCard(movie) {
   const navigate = useNavigate();
 
   function handleTravel() {
-    navigate(`/movie/${movie.movie.id}`)
+    navigate(`/movie/${movie.movie.id}`);
   }
 
-  console.log(movie.movie);
   return (
     <div
       className="w-[14rem] max-w-[100%] mb-4 space-y-1.5 transition-transform duration-300 transform hover:scale-105 cursor-pointer"

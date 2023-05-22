@@ -3,6 +3,7 @@ import axios from "axios";
 
 import iconWally from "../../assets/iconWally/Wally.png";
 import loadingSpinner from "../../assets/loadingSpinner/orange_circles.gif";
+
 import { MoviesCard } from "../../components/MoviesCard";
 
 export function Home() {
@@ -11,7 +12,7 @@ export function Home() {
   useEffect(() => {
     const getData = async () => {
       const response = await axios.get(
-        `https://api.themoviedb.org/3/movie/popular/?api_key=${process.env.REACT_APP_API_KEY}`
+        `https://api.themoviedb.org/3/movie/popular/?api_key=${process.env.REACT_APP_API_KEY}&language=pt-BR`
       );
       setMovies(response.data.results.slice(0,10)); 
       //slice(0,10) porque o problema só pede 10 filmes. 
@@ -39,9 +40,11 @@ export function Home() {
             src={iconWally}
             alt="Ícone Wally, símbolo do Itegraflix"
           />
-          <p className="font-bold text-[36px] text-colorOrange">ITEGRAFLIX</p>
+          <p className="font-bold text-[2.25rem] text-colorOrange">ITEGRAFLIX</p>
         </div>
+
         <div className="h-1 bg-colorOrange"></div>
+        
         <div className="flex flex-col py-[1.5rem] px-[6.6rem] space-y-[1.5rem]">
           <p className="w-[14rem] max-w-[100%]font-bold text-[28px] text-colorWhite">Populares</p>
           <div id="FILMES" className="flex flex-wrap justify-evenly">
