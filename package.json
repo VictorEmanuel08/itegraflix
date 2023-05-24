@@ -1,7 +1,6 @@
 {
   "name": "itegraflix",
   "version": "0.1.0",
-  "homepage": "https://victoremanuel08.github.io/itegraflix/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.0",
