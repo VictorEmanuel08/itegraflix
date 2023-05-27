@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/itegraflix/static/css/main.daf1adaf.css",
+    "main.js": "/itegraflix/static/js/main.4177fd07.js",
+    "static/media/orange_circles.gif": "/itegraflix/static/media/orange_circles.2187296e5d399b5c8373.gif",
+    "index.html": "/itegraflix/index.html",
+    "main.daf1adaf.css.map": "/itegraflix/static/css/main.daf1adaf.css.map",
+    "main.4177fd07.js.map": "/itegraflix/static/js/main.4177fd07.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.daf1adaf.css",
+    "static/js/main.4177fd07.js"
+  ]
+}
