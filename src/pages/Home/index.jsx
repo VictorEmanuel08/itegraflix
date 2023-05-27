@@ -12,7 +12,7 @@ export function Home() {
   useEffect(() => {
     const getData = async () => {
       const response = await axios.get(
-        `https://api.themoviedb.org/3/movie/popular/?api_key=${process.env.REACT_APP_API_KEY}&language=pt-BR`
+        `https://api.themoviedb.org/3/movie/popular/?api_key=9df3e0996c1d5cb4477ac00f77d54220&language=pt-BR`
       );
       setMovies(response.data.results.slice(0,10)); 
       //slice(0,10) porque o problema só pede 10 filmes. 

@@ -17,7 +17,7 @@ export function SoloMovie() {
   useEffect(() => {
     const getData = async () => {
       const response = await axios.get(
-        `https://api.themoviedb.org/3/movie/${idMovie}?api_key=${process.env.REACT_APP_API_KEY}&language=pt-BR`
+        `https://api.themoviedb.org/3/movie/${idMovie}?api_key=9df3e0996c1d5cb4477ac00f77d54220&language=pt-BR`
       );
       setMovie(response.data);
     };
@@ -25,7 +25,7 @@ export function SoloMovie() {
 
     const getCast = async () => {
       const res = await axios.get(
-        `https://api.themoviedb.org/3/movie/${idMovie}/credits?api_key=${process.env.REACT_APP_API_KEY}`
+        `https://api.themoviedb.org/3/movie/${idMovie}/credits?api_key=9df3e0996c1d5cb4477ac00f77d54220`
       );
       setCast(res.data.cast.slice(0, 3));
     };
